@@ -15,7 +15,7 @@ import static org.junit.Assert.assertNotEquals;
 @RunWith(RobolectricTestRunner.class)
 @Config(manifest = Config.NONE)
 
-public class TestA1BasicUI011 extends ViewTest {
+public class TestA1BasicUI011 extends ViewTest1 {
     private MainActivity activity;
     private String packageName = "org.aplas";
     private String targetDevice = "9";

@@ -2,7 +2,7 @@ package org.aplas.basicapp;
 
 import android.content.res.Resources;
 
-public class ResourceTest extends ViewTest {
+public class ResourceTest extends ViewTest1 {
     private Resources resource;
 
     public ResourceTest(Resources rsc) {

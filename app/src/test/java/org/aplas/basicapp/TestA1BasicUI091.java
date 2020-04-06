@@ -13,7 +13,7 @@ import org.robolectric.annotation.Config;
 @Config(manifest = Config.NONE)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
-public class TestA1BasicUI091 extends ViewTest {
+public class TestA1BasicUI091 extends ViewTest1 {
     ResourceTest rsc;
     private MainActivity activity;
     private String packName;

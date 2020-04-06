@@ -19,7 +19,7 @@ import java.util.List;
 @Config(manifest = Config.NONE)
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
-public class TestA1BasicUI082 extends ViewTest {
+public class TestA1BasicUI082 extends ViewTest1 {
     private MainActivity activity;
     private RelativeLayout layout;
 

@@ -13,7 +13,7 @@ import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
-public class ElementTest extends ViewTest {
+public class ElementTest extends ViewTest1 {
     private View component;
     private String compName;
     private String msgHeader;
