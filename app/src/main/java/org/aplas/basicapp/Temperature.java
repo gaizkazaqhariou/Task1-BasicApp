@@ -2,8 +2,6 @@ package org.aplas.basicapp;
 
 public class Temperature {
     private double celcius;
-    private double fahrenheit;
-    private double kelvins;
 
     public Temperature() {
     }
