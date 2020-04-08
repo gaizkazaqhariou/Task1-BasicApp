@@ -56,7 +56,7 @@ public class TestA1BasicUI082 extends ViewTest1 {
         //Component properties value
         int compIdx = 6;
         ImageView component = (ImageView) layout.getChildAt(compIdx);
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Test each item
         comp.testIdName("imgFormula");

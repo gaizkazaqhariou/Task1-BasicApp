@@ -14,7 +14,7 @@ import org.robolectric.annotation.Config;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
 public class TestA1BasicUI091 extends ViewTest1 {
-    ResourceTest rsc;
+    ResourceTest1 rsc;
     private MainActivity activity;
     private String packName;
 
@@ -22,7 +22,7 @@ public class TestA1BasicUI091 extends ViewTest1 {
     public void initTest() {
         activity = Robolectric.buildActivity(MainActivity.class).create().get();
         packName = activity.getPackageName();
-        rsc = new ResourceTest(activity.getResources());
+        rsc = new ResourceTest1(activity.getResources());
     }
 
     @Test

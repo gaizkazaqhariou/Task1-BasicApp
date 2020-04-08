@@ -65,7 +65,7 @@ public class TestA1BasicUI052 extends ViewTest1 {
     public void check_01_EditText_Properties() { //Check Layout Specification
         //Preprocessing
         EditText component = (EditText) layout.getChildAt(0);
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Component properties value
         comp.testIdName("inputText");
@@ -87,7 +87,7 @@ public class TestA1BasicUI052 extends ViewTest1 {
     public void check_02_Spinner_Properties() { //Check Layout Specification
         //Preprocessing
         Spinner component = (Spinner) layout.getChildAt(1);
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Component properties value
         comp.testIdName("oriList");
@@ -105,7 +105,7 @@ public class TestA1BasicUI052 extends ViewTest1 {
         //Preprocessing
         Typeface compStyle = Typeface.create("fonts/cambria.ttf", Typeface.BOLD);
         TextView component = (TextView) layout.getChildAt(2);
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Component items test
         comp.testIdName("myTextView2");
@@ -124,7 +124,7 @@ public class TestA1BasicUI052 extends ViewTest1 {
     public void check_04_EditText_Properties() { //Check Layout Specification
         //Preprocessing
         EditText component = (EditText) layout.getChildAt(3);
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Component properties value
         comp.testIdName("outputText");
@@ -146,7 +146,7 @@ public class TestA1BasicUI052 extends ViewTest1 {
     public void check_05_Spinner_Properties() { //Check Layout Specification
         //Preprocessing
         Spinner component = (Spinner) layout.getChildAt(4);
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Component properties value
         comp.testIdName("convList");

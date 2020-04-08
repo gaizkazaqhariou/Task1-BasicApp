@@ -13,16 +13,14 @@ import android.widget.Spinner;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
-import java.util.List;
-
-public class ElementTest extends ViewTest {
+public class ElementTest1 extends ViewTest1 {
     private View component;
     private String compName;
     private String msgHeader;
     private String className;
     //private ArrayList<HashMap> testList = new ArrayList<>();
 
-    public ElementTest(View comp) {
+    public ElementTest1(View comp) {
         component = comp;
         compName = component.getContext().getResources().getResourceEntryName(component.getId());
         className = component.getClass().getSimpleName();
@@ -76,10 +74,12 @@ public class ElementTest extends ViewTest {
         String msg = msgHeader + "Element left padding is not suitable\n";
         testItem(expected, component.getPaddingLeft(), msg, 1);
     }
+
     public void testPaddingRight(int expected) {
         String msg = msgHeader + "Element right padding is not suitable\n";
         testItem(expected, component.getPaddingRight(), msg, 1);
     }
+
     public void testPadding(int expected) {
         String msg = msgHeader + "Element padding is not suitable\n";
         testItem(expected, component.getPaddingTop(), msg, 1);
@@ -87,6 +87,7 @@ public class ElementTest extends ViewTest {
         testItem(expected, component.getPaddingLeft(), msg, 1);
         testItem(expected, component.getPaddingRight(), msg, 1);
     }
+
     public void testBgColor(int expected) {
         String msg = msgHeader + "Element Background color is not suitable\n";
         testItem(expected, ((ColorDrawable) component.getBackground()).getColor(), msg, 1);
@@ -174,42 +175,30 @@ public class ElementTest extends ViewTest {
         }
     }
 
-    public void testSpinnerContent(List expected) {
+    public void testSpinnerContent(java.util.List expected) {
         String msg = msgHeader + "Element spinner content is not suitable\n";
-
+        //testItem(expected,((Spinner)component).getGravity(),msg,1);
         Adapter list = ((Spinner) component).getAdapter();
-        String res = "";
+        boolean isValid = true;
         for (int i = 0; i < list.getCount(); i++) {
-            res += list.getItem(i) + ";";
-            /*
             if (!expected.get(i).equals(list.getItem(i))) {
                 isValid = false;
-            }*/
+            }
         }
-        testItem(listToString(expected), res, msg, 1);
+        testItem(true, isValid, msg, 1);
     }
 
     public void testSpinnerContent(String[] expected) {
-        /*
         String msg = msgHeader + "Element spinner content is not suitable\n";
         //testItem(expected,((Spinner)component).getGravity(),msg,1);
-        Adapter list = ((Spinner)component).getAdapter();
+        Adapter list = ((Spinner) component).getAdapter();
         boolean isValid = true;
-        for (int i=0; i<list.getCount(); i++){
+        for (int i = 0; i < list.getCount(); i++) {
             if (!expected[i].equals(list.getItem(i))) {
                 isValid = false;
             }
         }
-        testItem(true,isValid,msg,1);
-        */
-        String msg = msgHeader + "Element spinner content is not suitable\n";
-
-        Adapter list = ((Spinner) component).getAdapter();
-        String res = "";
-        for (int i = 0; i < list.getCount(); i++) {
-            res += list.getItem(i) + ";";
-        }
-        testItem(arrayToString(expected), res, msg, 1);
+        testItem(true, isValid, msg, 1);
     }
 
     public void testSpinnerContent(String expected) {
@@ -260,10 +249,5 @@ public class ElementTest extends ViewTest {
     public void testStrectchColumn(boolean expected) {
         String msg = msgHeader + "Element column strecth is not suitable\n";
         testItem(expected, ((TableLayout) component).isStretchAllColumns(), msg, 1);
-    }
-
-    public void testVisibility(int visibility) {
-        String msg = msgHeader + "Element visibility is not suitable\n";
-        testItem(visibility, component.getVisibility(), msg, 1);
     }
 }

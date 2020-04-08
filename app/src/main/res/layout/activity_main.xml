@@ -166,7 +166,7 @@
     </RadioGroup>
 
     <ImageView
-        android:id="@+id/imgFormula"
+        android:id="@+id/img"
         android:layout_width="89dp"
         android:layout_height="89dp"
         android:layout_below="@+id/radioGroup"

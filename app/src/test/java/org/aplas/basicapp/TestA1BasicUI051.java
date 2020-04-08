@@ -14,13 +14,13 @@ import org.robolectric.annotation.Config;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 
 public class TestA1BasicUI051 extends ViewTest1 {
-    ResourceTest rsc;
+    ResourceTest1 rsc;
     private MainActivity activity;
 
     @Before
     public void initTest() {
         activity = Robolectric.buildActivity(MainActivity.class).create().get();
-        rsc = new ResourceTest(activity.getResources());
+        rsc = new ResourceTest1(activity.getResources());
     }
 
     @Test

@@ -61,7 +61,7 @@ public class TestA1BasicUI061 extends ViewTest1 {
     public void check_01_ChildLayout_Properties() throws Exception { //Check Button Specification
         //Component properties value
         LinearLayout component = layout;
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Component properties value
         comp.testIdName("child2");
@@ -76,7 +76,7 @@ public class TestA1BasicUI061 extends ViewTest1 {
     public void check_02_Checkbox_Properties() { //Check Layout Specification
         //Preprocessing
         CheckBox component = (CheckBox) layout.getChildAt(0);
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Component properties value
         comp.testIdName("chkRounded");
@@ -92,7 +92,7 @@ public class TestA1BasicUI061 extends ViewTest1 {
     public void check_03_Checkbox_Properties() { //Check Layout Specification
         //Preprocessing
         CheckBox component = (CheckBox) layout.getChildAt(1);
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Component properties value
         comp.testIdName("chkFormula");

@@ -73,7 +73,7 @@ public class TestA1BasicUI092 extends ViewTest1 {
     public void check_01_TableLayout_Properties() { //Check Layout Specification
         //Component properties value
         int compIdx = 7;
-        ElementTest comp = new ElementTest(layout);
+        ElementTest1 comp = new ElementTest1(layout);
 
         //Test each item
         comp.testIdName("table");
@@ -94,7 +94,7 @@ public class TestA1BasicUI092 extends ViewTest1 {
         String[] itemVal = "Temperature,0°C,32°F,273.15 K".split("\\,");
 
         //Test first column
-        ElementTest comp = new ElementTest(row.getChildAt(0));
+        ElementTest1 comp = new ElementTest1(row.getChildAt(0));
         comp.testIdName(itemId[0]);
         comp.testWidth(TableRow.LayoutParams.WRAP_CONTENT);
         comp.testHeight(TableRow.LayoutParams.WRAP_CONTENT);
@@ -108,7 +108,7 @@ public class TestA1BasicUI092 extends ViewTest1 {
         int[] cellColors = {-6987, -6987, -6987};
         //Test each column
         for (int i = 1; i < 4; i++) {
-            comp = new ElementTest(row.getChildAt(i));
+            comp = new ElementTest1(row.getChildAt(i));
             comp.testIdName(itemId[i]);
             comp.testWidth(TableRow.LayoutParams.WRAP_CONTENT);
             comp.testHeight(TableRow.LayoutParams.WRAP_CONTENT);
@@ -126,7 +126,7 @@ public class TestA1BasicUI092 extends ViewTest1 {
         String[] itemVal = "Distance,1 Meter,39.3701 Inch,3.2808 feet".split("\\,");
 
         //Test first column
-        ElementTest comp = new ElementTest(row.getChildAt(0));
+        ElementTest1 comp = new ElementTest1(row.getChildAt(0));
         comp.testIdName(itemId[0]);
         comp.testWidth(TableRow.LayoutParams.WRAP_CONTENT);
         comp.testHeight(TableRow.LayoutParams.WRAP_CONTENT);
@@ -140,7 +140,7 @@ public class TestA1BasicUI092 extends ViewTest1 {
         int[] cellColors = {-6987, -6987, -6987};
         //Test each column
         for (int i = 1; i < 4; i++) {
-            comp = new ElementTest(row.getChildAt(i));
+            comp = new ElementTest1(row.getChildAt(i));
             comp.testIdName(itemId[i]);
             comp.testWidth(TableRow.LayoutParams.WRAP_CONTENT);
             comp.testHeight(TableRow.LayoutParams.WRAP_CONTENT);
@@ -159,7 +159,7 @@ public class TestA1BasicUI092 extends ViewTest1 {
         String[] itemVal = "Weight,1 Kg,35.2740 ounce,2.2046 pound".split("\\,");
 
         //Test first column
-        ElementTest comp = new ElementTest(row.getChildAt(0));
+        ElementTest1 comp = new ElementTest1(row.getChildAt(0));
         comp.testIdName(itemId[0]);
         comp.testWidth(TableRow.LayoutParams.WRAP_CONTENT);
         comp.testHeight(TableRow.LayoutParams.WRAP_CONTENT);
@@ -173,7 +173,7 @@ public class TestA1BasicUI092 extends ViewTest1 {
         int[] cellColors = {-6987, -6987, -6987};
         //Test each column
         for (int i = 1; i < 4; i++) {
-            comp = new ElementTest(row.getChildAt(i));
+            comp = new ElementTest1(row.getChildAt(i));
             comp.testIdName(itemId[i]);
             comp.testWidth(TableRow.LayoutParams.WRAP_CONTENT);
             comp.testHeight(TableRow.LayoutParams.WRAP_CONTENT);

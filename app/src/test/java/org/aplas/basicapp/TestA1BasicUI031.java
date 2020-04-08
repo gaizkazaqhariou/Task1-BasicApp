@@ -57,7 +57,7 @@ public class TestA1BasicUI031 extends ViewTest1 {
     @Test
     public void check_01_Layout_Specification() { //Check Layout Specification
         //Component properties value
-        ElementTest comp = new ElementTest(layout);
+        ElementTest1 comp = new ElementTest1(layout);
 
         //Test each item
         comp.testWidth(ViewGroup.LayoutParams.MATCH_PARENT);
@@ -72,7 +72,7 @@ public class TestA1BasicUI031 extends ViewTest1 {
         //Preprocessing
         Typeface compStyle = Typeface.create("fonts/cambria.ttf", Typeface.BOLD);
         TextView component = (TextView) layout.getChildAt(0);
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Component items test
         comp.testIdName("myTextView1");
@@ -92,7 +92,7 @@ public class TestA1BasicUI031 extends ViewTest1 {
         int compIdx = 1;
         Typeface compStyle = Typeface.create("fonts/lucida.ttf", Typeface.NORMAL);
         Button component = (Button) layout.getChildAt(compIdx);
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Component items test
         comp.testIdName("convertButton");

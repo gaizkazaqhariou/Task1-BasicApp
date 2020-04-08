@@ -2,10 +2,10 @@ package org.aplas.basicapp;
 
 import android.content.res.Resources;
 
-public class ResourceTest extends ViewTest {
+public class ResourceTest1 extends ViewTest1 {
     private Resources resource;
 
-    public ResourceTest(Resources rsc) {
+    public ResourceTest1(Resources rsc) {
         resource = rsc;
     }
 
@@ -19,18 +19,14 @@ public class ResourceTest extends ViewTest {
         int resId = resource.getIdentifier(name, "array", getClass().getPackage().getName());
         testItem(0, resId, "String array " + name + " id is not exist", 2);
         String[] str = resource.getStringArray(resId);
-        testItem(arrayToString(expected), arrayToString(str), "String array " + name + " value is not valid", 1);
-        /*
-        String[] str = resource.getStringArray(resId);
-        boolean found=false;
-        int i=0;
-        while (!found && i<expected.length) {
-            found = (expected[i]!=str[i]);
+        boolean found = false;
+        int i = 0;
+        while (!found && i < expected.length) {
+            found = (expected[i] != str[i]);
             i++;
-            testItem(expected[i],str[i],"String array "+name+" value is not valid",1);
+            testItem(expected[i], str[i], "String array " + name + " value is not valid", 1);
         }
-        testItem(!found,!found,"String array "+name+" value is not valid",4);
-        */
+        testItem(!found, !found, "String array " + name + " value is not valid", 4);
     }
 
     public void testColorResource(String name, int expected) {

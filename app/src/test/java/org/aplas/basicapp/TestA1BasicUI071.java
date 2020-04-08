@@ -61,7 +61,7 @@ public class TestA1BasicUI071 extends ViewTest1 {
     public void check_01_RadioGroup_Properties() { //Check Layout Specification
         //Preprocessing
         RadioGroup component = layout;
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Component properties value
         comp.testIdName("radioGroup");
@@ -75,7 +75,7 @@ public class TestA1BasicUI071 extends ViewTest1 {
     public void check_02_RadioButton_Properties() { //Check Layout Specification
         //Preprocessing
         RadioButton component = (RadioButton) layout.getChildAt(0);
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Component properties value
         comp.testIdName("rbTemp");
@@ -89,7 +89,7 @@ public class TestA1BasicUI071 extends ViewTest1 {
     public void check_03_RadioButton_Properties() { //Check Layout Specification
         //Preprocessing
         RadioButton component = (RadioButton) layout.getChildAt(1);
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Component properties value
         comp.testIdName("rbDist");
@@ -103,7 +103,7 @@ public class TestA1BasicUI071 extends ViewTest1 {
     public void check_04_RadioButton_Properties() { //Check Layout Specification
         //Preprocessing
         RadioButton component = (RadioButton) layout.getChildAt(2);
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Component properties value
         comp.testIdName("rbWeight");

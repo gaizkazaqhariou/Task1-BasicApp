@@ -59,7 +59,7 @@ public class TestA1BasicUI041 extends ViewTest1 {
         //Component properties value
         int compIdx = 2;
         Space component = (Space) layout.getChildAt(compIdx);
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Test each item
         comp.testWidth(ViewGroup.LayoutParams.MATCH_PARENT);
@@ -72,7 +72,7 @@ public class TestA1BasicUI041 extends ViewTest1 {
         //Component properties value
         int compIdx = 3;
         LinearLayout component = (LinearLayout) layout.getChildAt(compIdx);
-        ElementTest comp = new ElementTest(component);
+        ElementTest1 comp = new ElementTest1(component);
 
         //Component properties value
         comp.testIdName("child1");
