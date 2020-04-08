@@ -29,6 +29,15 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox roundBox, formBox;
     private ImageView imgView;
 
+    //error here
+    protected void doConvert() {
+        RadioButton rbSelected = findViewById(unitType.getCheckedRadioButtonId());
+        double val = Double.parseDouble(String.valueOf(inputTxt.getText()));
+        convertUnit(rbSelected.getText().toString(), unitOri.getSelectedItem().toString(), unitConv.getSelectedItem().toString(), val);
+        strResult(val, formBox.isChecked());
+    }
+    //error here
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,8 +62,8 @@ public class MainActivity extends AppCompatActivity {
                 arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                 unitOri.setAdapter(arrayAdapter);
                 unitConv.setAdapter(arrayAdapter);
-                inputTxt.setText("0");
-                outputTxt.setText("0");
+//                inputTxt.setText("0");
+//                outputTxt.setText("0");
 
             }
         });

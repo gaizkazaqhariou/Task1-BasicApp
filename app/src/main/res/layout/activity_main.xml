@@ -179,7 +179,7 @@
         android:id="@+id/table"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imgFormula"
+        android:layout_below="@+id/img"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="5pt"
         android:stretchColumns="*">
