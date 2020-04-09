@@ -2,9 +2,11 @@ package org.aplas.basicapp;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -65,6 +67,17 @@ public class MainActivity extends AppCompatActivity {
 //                inputTxt.setText("0");
 //                outputTxt.setText("0");
 
+            }
+        });
+
+        roundBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (b == true) {
+                    findViewById(R.id.imgFormula).setVisibility(View.VISIBLE);
+                } else if (b == false) {
+                    findViewById(R.id.imgFormula).setVisibility(View.INVISIBLE);
+                }
             }
         });
     }
