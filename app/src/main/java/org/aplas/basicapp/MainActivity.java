@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox roundBox, formBox;
     private ImageView imgView;
 
+    //finish project but still have an error at task 7 and skip task 8
     //error here
     protected void doConvert() {
         RadioButton rbSelected = findViewById(unitType.getCheckedRadioButtonId());
